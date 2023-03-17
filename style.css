@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(139, 88, 186);
+  font-family: "Roboto", sans-serif;
+
+  display: grid;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+
+  justify-self: center;
+  align-items: center;
+
+  width: 82rem;
+  gap: clamp(3rem, 7rem + 10vw, 19rem);
+}
+
+#timer-and-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#timer {
+  display: flex;
+  font-size: clamp(6rem, 11rem + 10vw, 14.5rem);
+  font-weight: 500;
+
+  color: hsla(240, 6%, 21%, 1);
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#controls button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 5.8rem);
+}
+
+.play svg path,
+.pause svg path,
+.stop svg path,
+.add-minutes svg path,
+.less-minutes svg path {
+  fill: hsla(240, 6%, 21%, 1);
+}
+
+.play,
+.pause,
+.stop,
+.add-minutes,
+.less-minutes {
+  background-color: transparent;
+}
+
+
+.hide {
+  display: none;
+}
+
+.add-minutes svg:hover,
+.less-minutes svg:hover {
+  transform: scale(1.05);
+}
+
+.play svg :hover,
+.stop svg :hover {
+  fill: rgb(18, 18, 20);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+#music-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+#music-type button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 4rem);
+}
+
+.forest-sound,
+.rain-sound,
+.coffeeshop-sound,
+.fireside-sound {
+  width: 13rem;
+  height: 15rem;
+  border-radius: 2.4rem;
+  background-color: #e1e1e6;
+}
+
+.forest-sound:hover,
+.rain-sound:hover,
+.coffeeshop-sound:hover,
+.fireside-sound:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.bg-tipe-forest {
+  background-color: #15803d;
+}
+
+.bg-tipe-rain {
+  background-color: #02799d;
+}
+
+.bg-tipe-coffeshop {
+  background-color: #d97706;
+}
+
+.bg-tipe-fireside {
+  background-color: #be123c;
+}
+
+.hider {
+  background-color: #e1e1e6;
+}
+@media (max-width: 426px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30rem;
+  }
+}

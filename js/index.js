@@ -85,7 +85,7 @@ function Timer({ minutesDisplay, secondsDisplay }) {
       }
 
       if (seconds <= 0) {
-        seconds = 6
+        seconds = 60
         --minutes
       }
       updateTimer(minutes, String(seconds - 1))

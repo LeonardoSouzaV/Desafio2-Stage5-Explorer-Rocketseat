@@ -219,6 +219,11 @@ buttonForestSound.addEventListener("click", function () {
   buttonRainSound.classList.add("hider")
   buttonCoffeeshopSound.classList.add("hider")
   buttonFiresideSound.classList.add("hider")
+
+  buttonForestSound.classList.add("hidering")
+  buttonRainSound.classList.remove("hidering")
+  buttonCoffeeshopSound.classList.remove("hidering")
+  buttonFiresideSound.classList.remove("hidering")
 })
 
 buttonRainSound.addEventListener("click", function () {
@@ -227,6 +232,11 @@ buttonRainSound.addEventListener("click", function () {
   buttonRainSound.classList.remove("hider")
   buttonCoffeeshopSound.classList.add("hider")
   buttonFiresideSound.classList.add("hider")
+
+  buttonForestSound.classList.remove("hidering")
+  buttonRainSound.classList.add("hidering")
+  buttonCoffeeshopSound.classList.remove("hidering")
+  buttonFiresideSound.classList.remove("hidering")
 })
 
 buttonCoffeeshopSound.addEventListener("click", function () {
@@ -235,6 +245,11 @@ buttonCoffeeshopSound.addEventListener("click", function () {
   buttonRainSound.classList.add("hider")
   buttonCoffeeshopSound.classList.remove("hider")
   buttonFiresideSound.classList.add("hider")
+
+  buttonForestSound.classList.remove("hidering")
+  buttonRainSound.classList.remove("hidering")
+  buttonCoffeeshopSound.classList.add("hidering")
+  buttonFiresideSound.classList.remove("hidering")
 })
 
 buttonFiresideSound.addEventListener("click", function () {
@@ -243,4 +258,9 @@ buttonFiresideSound.addEventListener("click", function () {
   buttonRainSound.classList.add("hider")
   buttonCoffeeshopSound.classList.add("hider")
   buttonFiresideSound.classList.remove("hider")
+
+  buttonForestSound.classList.remove("hidering")
+  buttonRainSound.classList.remove("hidering")
+  buttonCoffeeshopSound.classList.remove("hidering")
+  buttonFiresideSound.classList.add("hidering")
 })

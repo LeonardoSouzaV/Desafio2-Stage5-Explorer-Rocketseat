@@ -66,7 +66,6 @@ main {
   background-color: transparent;
 }
 
-
 .hide {
   display: none;
 }
@@ -106,6 +105,10 @@ button {
   background-color: #e1e1e6;
 }
 
+.rain-sound svg path {
+  fill: #323238;
+}
+
 .forest-sound:hover,
 .rain-sound:hover,
 .coffeeshop-sound:hover,
@@ -133,6 +136,11 @@ button {
 .hider {
   background-color: #e1e1e6;
 }
+
+.hidering svg path {
+  fill: #ffffff;
+}
+
 @media (max-width: 426px) {
   main {
     display: flex;
